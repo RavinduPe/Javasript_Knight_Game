@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body class="body" onload="startAnimation();" onkeypress="keyCheak(event)">
+    <div id="startBackground" class="startBackground">
+      <div class="container">
+        <p>Knight_Game</p>
+        <button id="btnStart" onclick="gameStart();">Start Game</button>
+      </div>
+    </div>
+    <div class="background" id="background">
+      <img id="boy" src="resourses/png/Idle (1).png" alt="boy_pic" />
+
+      <div class="score" id="score">0</div>
+    </div>
+
+    <div id="end" class="end">
+      <div style="color: rgb(251, 255, 11)">Game Over</div>
+      <div style="color: rgb(145, 189, 0)">Your Score</div>
+      <div style="color: rgb(54, 200, 223)" id="endScore">0</div>
+      <button class="btn" onclick="reload()">Try Again</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
