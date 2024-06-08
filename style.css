@@ -55,6 +55,7 @@
   color: white;
   font-family: "Broadway";
   visibility: hidden;
+  z-index: 3;
 }
 
 .btn,
